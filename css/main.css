@@ -35042,7 +35042,7 @@ a.bundle-btn {
 }
 
 .fruits-choose-serial {
-    background: rgba(0, 0, 0, 0) url("../../img/icon-img/50.png") no-repeat scroll center center/cover;
+    background: rgba(0, 0, 0, 0) url("../img/icon-img/50.png") no-repeat scroll center center/cover;
     position: absolute;
     height: 63px;
     width: 150px;
@@ -36754,7 +36754,7 @@ select.goog-te-combo {
 }
 
 .breadcrumb-area-contact {
-    background-image: url("../../img/banner/contact-banner.jpg")
+    background-image: url("../img/banner/contact-banner.jpg")
 }
 
 .countryCode {
