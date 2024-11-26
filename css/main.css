@@ -34472,6 +34472,12 @@ a.bundle-btn {
 .notification-btn-close {
     display: flex
 }
+.btn-close{
+    transition: all 0.2s ease;
+}
+.btn-close:hover{
+    background-color: red;
+}
 
 .notification-btn>a {
     background-color: #ebf9ff;
