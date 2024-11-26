@@ -1,0 +1,1272 @@
+html {
+  scroll-behavior: smooth;
+  text-align: justify;
+  text-justify: inter-word;
+  font-size: 15px;
+}
+// loader
+#ftco-loader {
+  position: fixed;
+  width: 96px;
+  height: 96px;
+  left: 50%;
+  top: 50%;
+  -webkit-transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+  background-color: rgba(255, 255, 255, 0.9);
+  -webkit-box-shadow: 0px 24px 64px rgba(0, 0, 0, 0.24);
+  box-shadow: 0px 24px 64px rgba(0, 0, 0, 0.24);
+  border-radius: 16px;
+  opacity: 0;
+  visibility: hidden;
+  -webkit-transition: opacity .2s ease-out, visibility 0s linear .2s;
+  -o-transition: opacity .2s ease-out, visibility 0s linear .2s;
+  transition: opacity .2s ease-out, visibility 0s linear .2s;
+  z-index: 1000; }
+
+#ftco-loader.fullscreen {
+  padding: 0;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  -webkit-transform: none;
+  -ms-transform: none;
+  transform: none;
+  background-color: #fff;
+  border-radius: 0;
+  -webkit-box-shadow: none;
+  box-shadow: none; }
+
+#ftco-loader.show {
+  -webkit-transition: opacity .4s ease-out, visibility 0s linear 0s;
+  -o-transition: opacity .4s ease-out, visibility 0s linear 0s;
+  transition: opacity .4s ease-out, visibility 0s linear 0s;
+  visibility: visible;
+  opacity: 1; }
+
+#ftco-loader .circular {
+  -webkit-animation: loader-rotate 2s linear infinite;
+  animation: loader-rotate 2s linear infinite;
+  position: absolute;
+  left: calc(50% - 24px);
+  top: calc(50% - 24px);
+  display: block;
+  -webkit-transform: rotate(0deg);
+  -ms-transform: rotate(0deg);
+  transform: rotate(0deg); }
+
+#ftco-loader .path {
+  stroke-dasharray: 1, 200;
+  stroke-dashoffset: 0;
+  -webkit-animation: loader-dash 1.5s ease-in-out infinite;
+  animation: loader-dash 1.5s ease-in-out infinite;
+  stroke-linecap: round; }
+
+@-webkit-keyframes loader-rotate {
+  100% {
+    -webkit-transform: rotate(360deg);
+    transform: rotate(360deg); } }
+
+@keyframes loader-rotate {
+  100% {
+    -webkit-transform: rotate(360deg);
+    transform: rotate(360deg); } }
+
+@-webkit-keyframes loader-dash {
+  0% {
+    stroke-dasharray: 1, 200;
+    stroke-dashoffset: 0; }
+  50% {
+    stroke-dasharray: 89, 200;
+    stroke-dashoffset: -35px; }
+  100% {
+    stroke-dasharray: 89, 200;
+    stroke-dashoffset: -136px; } }
+
+@keyframes loader-dash {
+  0% {
+    stroke-dasharray: 1, 200;
+    stroke-dashoffset: 0; }
+  50% {
+    stroke-dasharray: 89, 200;
+    stroke-dashoffset: -35px; }
+  100% {
+    stroke-dasharray: 89, 200;
+    stroke-dashoffset: -136px; } }
+
+// //google translator
+#google_translate_element {
+  position: absolute;
+  right: 10px;
+  z-index: 100;
+}
+.goog-te-gadget {
+  // color: #fff ;
+  color: transparent !important;
+}
+select.goog-te-combo {
+  height: 22px;
+}
+ .goog-logo-link {
+  visibility: hidden;
+}
+
+.current {
+  color: #85bd02 !important;
+}
+
+.furits-header .menu-style-2 nav>ul>li:hover>a {
+  color: #85bd02;
+}
+// all pages breadcumb areas
+.breadcrumb-area-contact, .about-banner, .breadcrumb-area-certificates, .breadcrumb-area-listing,.breadcrumb-area-products,.breadcrumb-area-career {
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+  height: 320px;
+  padding: 6% 0;
+}
+.ul {
+  margin-right: 120px;
+}
+.owl-carousel
+  {
+    touch-action: manipulation;
+  }
+
+.header-sticky-3 {
+  // background-image: linear-gradient(#00000099,#ffffff00);
+  background: white;
+}
+.no-gutters {
+  position: relative;
+}
+
+.scrolled-navbar {
+  padding: 0;
+  transition: 0.2s ease;
+  height: 80px;
+  background: #fff;
+  box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.1);
+
+}
+.scrolled-ul {
+  // transition: all 0.2s ease 0s;
+  /*padding: 10px 0 !important;*/
+  margin-top: -38px;
+}
+.scrolled-ul li a {
+  padding: 30px 0 0 0 !important;
+  font-size: 15px !important;
+}
+.single-dropdown li a {
+  padding:  0 !important;
+}
+.single-dropdown li:hover a {
+  transform: translateX(8px);
+}
+
+.pisum-logo {
+  transition: all 0.2s ease;
+}
+.scrolled-pisum-logo {
+  transition: all 0.2s ease;
+  transform: scale(0.6);
+  margin-top: -14px;
+}
+
+.banner-slider .owl-slide {
+  height: 540px;
+  margin-top: 139px !important;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+.banner-slider .owl-next {
+  display: none;
+  right: 1%;
+  top: 57%;
+
+}
+.banner-slider .owl-prev {
+  display: none;
+  left: 1%;
+  top: 57%;
+
+}
+.banner-slider:hover .owl-next {
+  display: block;
+  transform: scale(2);
+}
+.banner-slider:hover .owl-prev {
+  display: block;
+  transform: scale(2);
+}
+.banner-slider .owl-prev .fa, .banner-slider .owl-next .fa {
+  color: #fff;
+}
+.main-home-heading {
+  margin-top: -21px;
+}
+
+.main-home-heading h1 {
+  font-size: 3.5vw;
+  line-height: 200%;
+}
+.main-home-heading h3 {
+  font-size: 2vw;
+}
+.fruits-choose-area {
+  background-color: #e8f8df;
+  position: relative;
+}
+
+.fruits-choose-content {
+  margin-left: 60px;
+}
+.single-fruits-services::before {
+    content: url(../../img/icon-img/55.png);
+    position: absolute;
+    transform: scale(0.5);
+    top: -10px;
+}
+
+.fruits-services-wrapper {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.single-fruits-services {
+  background-color:#e8f8df;
+  padding: 20px;
+  border-radius: 10px;
+}
+
+.choose-row {
+  margin: 0 !important;
+}
+
+.newsletter-area {
+  background-image: linear-gradient(to right, #43e97b 0%, #38f9d7 100%);
+}
+
+.fruits-footer .food-widget-content ul li a {
+  text-transform: capitalize;
+}
+
+.food-footer-bottom {
+  position: relative;
+}
+.fruits-footer .food-info-content {
+  margin: 5px;
+}
+.fruits-footer .food-info-content > h6 {
+  color: #fff;
+  font-weight: 500;
+}
+
+.social-bar {
+  width: 50%;
+  display: table;
+  margin: 0;
+  position: absolute;
+  bottom: -50px;
+  right: 25%;
+}
+
+.social-bar a {
+  display: table-cell;
+  width: 14.2%;
+  text-align: center;
+  font-size: 2em;
+}
+
+.text-yt{
+  color: #eb3b38 !important;
+}
+.text-fb {
+  color: #3b5998 !important;
+}
+.text-tw {
+  color: #00acee !important;
+}
+.text-ld {
+  color: #0e76a8 !important;
+}
+.text-ig {
+  color: #E1306C !important;
+}
+.text-gp {
+  color: #db4a39 !important;
+}
+.text-fb:hover {
+  color: #3b5998 !important;
+}
+.text-tw:hover {
+  color: #00acee !important;
+}
+.text-ld:hover {
+  color: #0e76a8 !important;
+}
+.text-ig:hover {
+  color: #E1306C !important;
+}
+.text-gp:hover {
+  color: #db4a39 !important;
+}
+.text-yt:hover{
+  color: #eb3b38 !important;
+}
+.footer-hr {
+  color: #fff;
+}
+
+.mt-6 {
+  margin-top: -6px;
+}
+.fruits-banner-mrg {
+  background: url("../img/banner/covid-security-banner (1).jpg");
+  height: 640px;
+  padding-top: 20%;
+  background-size: cover;
+}
+.covid-content {
+  background: #00000055;
+  padding: 2rem;
+}
+.covid-content h1{
+ font-size: 3vw;
+}
+.covid-content h3{
+ font-size: 2vw;
+}
+
+/*about us section*/
+
+.breadcrumb-content {
+  /*text-align: center;*/
+}
+
+.about-banner {
+  background-image: url('../../img/banner/about-banner.jpg');
+}
+
+.about-story img {
+  border-radius: 5px;
+}
+
+.banner-wrapper-4 {
+  padding: 5% ;
+  margin-left: 30px;
+}
+
+
+.values-area {
+  background-image: linear-gradient(-225deg, #FFFEFF 0%, #D7FFFE 100%);
+}
+
+.quality-value:before {
+  content: url(../../img/icon-img/quality.png);
+  // margin-right: 14px;
+  transform: scale(0.7);
+}
+.experience-value:before {
+  content: url(../../img/icon-img/experience.png);
+  // margin-right: 14px;
+  transform: scale(0.7);
+}
+.certified-value:before {
+  content: url(../../img/icon-img/certified.png);
+  // margin-right: 14px;
+  transform: scale(0.7);
+}
+.value-value:before {
+  content: url(../../img/icon-img/commitment.png);
+  // margin-right: 14px;
+  transform: scale(0.7);
+}
+.innovation-value:before {
+  content: url(../../img/icon-img/innovation.png);
+  // margin-right: 14px;
+  transform: scale(0.7);
+}
+// .quality-value:before {
+//   content: url(../../img/icon-img/quality1.png);
+//   // margin-right: 14px;
+//   transform: scale(0.7);
+// }
+.value-choose-content > p {
+  color: #666666;
+  font-size: 15px;
+  line-height: 26px;
+  margin: 0;
+}
+
+.testimonials-area {
+  background-image: linear-gradient(120deg, #fdfbfb 0%, #ebedee 100%);
+}
+
+.who-are-we-area p{
+  color: #666666;
+  font-size: 15px;
+  line-height: 26px;
+  margin: 0 20px;
+}
+
+.what-we-do-area p{
+  color: #666666;
+  font-size: 15px;
+  line-height: 26px;
+  margin: 0 20px;
+}
+
+
+.values-area {
+  text-align: center;
+}
+
+.single-testimonial-2 img {
+  border-radius: 100px;
+  border: 1px dashed #bbb;
+}
+
+/*contact page start*/
+.breadcrumb-area-contact {
+  background-image: url('../../img/banner/contact-banner.jpg');
+}
+
+.countryCode {
+  height: 35px;
+}
+
+.single-branch {
+  margin: 30px 0;
+  padding: 10px 30px;
+}
+
+.our-branches {
+  background-image: linear-gradient(-225deg, #FFFEFF 0%, #D7FFFE 100%);
+}
+/*Blog page start*/
+.banner-blog{
+    background-image: url('../../img/banner/blog-banner.jpg');
+}
+ .banner-blog{
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  padding: 6% 0;
+}
+/*Blog End*/
+.breadcrumb-area-career{
+    background-image: url('../../img/banner/banner-career.jpg');
+}
+
+/*cbreadcrumb page start*/
+
+.breadcrumb-area-certificates {
+  background-image: url('../../img/banner/certificate-banner-01.jpg');
+}
+.breadcrumb-area-products {
+  background-image: url('../../img/banner/about-banner.jpg');
+}
+.paragraph p {
+  color: #666666;
+  font-size: 15px;
+  line-height: 26px;
+  margin: 0 10px;
+}
+
+.btn:focus, .btn:active, button:focus, button:active {
+  outline: none !important;
+  box-shadow: none !important;
+}
+
+.close {
+  margin-right: 0px !important;
+  font-size: 30px !important;
+  cursor: pointer;
+}
+
+#image-gallery .modal-footer{
+  display: block;
+}
+.thumb{
+  margin-top: 15px;
+  margin-bottom: 15px;
+}
+
+/*certificates starts here*/
+
+
+.single-certificate {
+  padding: 20px 0;
+}
+
+.single-certificate img{
+  width: 200px;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+
+
+/*product listing page */
+
+.grains {
+  background-image: url(../../img/banner/grains-banner.jpg);
+}
+.pulses {
+  background-image: url(../../img/banner/pulses.jpg);
+}
+.spices {
+  background-image: url(../../img/banner/indian-spices-banner.jpg);
+}
+.fruits {
+  background-image: url(../../img/banner/fruits-banner.jpg);
+}
+.vegetables {
+  background-image: url(../../img/banner/vegetable-banner.jpg);
+}
+.oilSeeds {
+  background-image: url(../../img/banner/oil-seeds.jpg);
+}
+.floriculture {
+  background-image: url(../../img/banner/floriculture.jpg);
+}
+.herbs {
+  background-image: url(../../img/banner/herbs-banner.jpg);
+}
+.dryFruits {
+  background-image: url(../../img/banner/dry-fruits-banner.jpg);
+}
+.beverages {
+  background-image: url(../../img/banner/beverages-banner.jpg);
+}
+.dehydrated-product {
+  background-image: url(../../img/banner/banner-dehydrated-products.jpg);
+}
+.banner-rice {
+  background-image: url(../../img/banner/rice-banner.jpg);
+}
+.banner-coffee {
+  background-image: url(../../img/banner/coffee-banner.jpg);
+}
+.coconut-banner {
+  background-image: url(../../img/banner/coconut-banner.jpg);
+}
+.tea-banner {
+  background-image: url(../../img/banner/tea-banner.jpg);
+}
+.banner-onion{
+  background-image: url(../../img/banner/banner-onion.jpg);
+}
+.banner-potato{
+  background-image: url(../../img/banner/banner-potato.jpg);
+}
+.banner-ginger{
+  background-image: url(../../img/banner/banner-ginger.jpg);
+}
+.banner-apple{
+  background-image: url(../../img/banner/banner-apple.jpg);
+}
+.banner-mango{
+  background-image: url(../../img/banner/banner-mango.jpg);
+}
+.banner-banana{
+  background-image: url(../../img/banner/banner-banana.jpg);
+}
+.banner-star-anise{
+  background-image: url(../../img/banner/banner-star-anise.jpg);
+}
+.banner-orange{
+  background-image: url(../../img/banner/banner-orange.jpg);
+}
+.banner-pineapple{
+  background-image: url(../../img/banner/banner-pineapple.jpg);
+}
+.banner-broccoli{
+  background-image: url(../../img/banner/banner-broccoli.jpg);
+}
+.banner-cinnamon{
+  background-image: url(../../img/banner/banner-cinnamon.jpg);
+}
+.banner-cabbage{
+  background-image: url(../../img/banner/banner-cabbage.jpg);
+}
+.banner-mushroom{
+  background-image: url(../../img/banner/banner-mushroom.jpg);
+}
+.banner-spinach{
+  background-image: url(../../img/banner/banner-spinach.jpg);
+}
+.banner-chickpea{
+  background-image: url(../../img/banner/banner-chickpea.jpg);
+}
+.banner-pea{
+  background-image: url(../../img/banner/banner-pea.jpg);
+}
+.banner-soybean{
+  background-image: url(../../img/banner/banner-soybean.jpg);
+}
+.banner-brinjal{
+  background-image: url(../../img/banner/banner-brinjal.jpg);
+}
+.banner-oats{
+  background-image: url(../../img/banner/banner-oats.jpg);
+}
+.banner-pigeonpea{
+  background-image: url(../../img/banner/banner-pigeonpea.jpg);
+}
+.banner-barley{
+  background-image: url(../../img/banner/banner-barley.jpg);
+}
+.banner-corn{
+  background-image: url(../../img/banner/banner-corn.jpg);
+}
+.banner-kidneybeans{
+  background-image: url(../../img/banner/banner-kidneybeans.jpg);
+}
+.banner-sesame{
+  background-image: url(../../img/banner/banner-sesame.jpg);
+}
+.banner-sunflower{
+  background-image: url(../../img/banner/banner-sunflower.jpg);
+}
+.banner-wheat{
+  background-image: url(../../img/banner/banner-wheat.jpg);
+}
+.banner-pearlmillet{
+  background-image: url(../../img/banner/banner-pearlmillet.jpg);
+}
+.banner-rye{
+  background-image: url(../../img/banner/banner-rye.jpg);
+}
+.banner-black-pepper{
+  background-image: url(../../img/banner/banner-black-pepper.jpg);
+}
+.banner-grapes{
+  background-image: url(../../img/banner/banner-grapes.jpg);
+}
+.banner-pomegranate{
+  background-image: url(../../img/banner/banner-pomegranate.jpg);
+}
+.banner-strawberry{
+  background-image: url(../../img/banner/banner-strawberry.jpg);
+}
+.banner-dragon-fruits{
+  background-image: url(../../img/banner/banner-dragon-fruits.jpg);
+}
+.banner-asafoetida{
+  background-image: url(../../img/banner/banner-asafoetida.jpg);
+}
+.banner-flax{
+  background-image: url(../../img/banner/banner-flax.jpg);
+}
+.banner-nutmeg{
+  background-image: url(../../img/banner/banner-nutmeg.jpg);
+}
+.banner-soybean{
+  background-image: url(../../img/banner/banner-soybean.jpg);
+}
+.banner-bottle-gourd{
+  background-image: url(../../img/banner/banner-bottle-gourd.jpg);
+}
+.banner-cauliflower{
+  background-image: url(../../img/banner/banner-cauliflower.jpg);
+}
+.banner-drum-stick{
+  background-image: url(../../img/banner/banner-drum-stick.jpg);
+}
+.banner-green-chilli{
+  background-image: url(../../img/banner/banner-green-chilli.jpg);
+}
+.banner-lady-finger{
+  background-image: url(../../img/banner/banner-lady-finger.jpg);
+}
+.banner-aloe-vera{
+  background-image: url(../../img/banner/banner-aloe-vera.jpg);
+}
+.banner-ashwagandha{
+  background-image: url(../../img/banner/banner-ashwagandha.jpg);
+}
+.banner-neem{
+  background-image: url(../../img/banner/banner-neem.jpg);
+}
+.banner-sage{
+  background-image: url(../../img/banner/banner-sage.jpg);
+}
+.banner-spring-canola{
+  background-image: url(../../img/banner/banner-spring-canola.jpg);
+}
+.banner-triticale{
+  background-image: url(../../img/banner/banner-triticale.jpg);
+}
+.banner-teff{
+  background-image: url(../../img/banner/banner-teff.jpg);
+}
+.banner-sorghum{
+  background-image: url(../../img/banner/banner-sorghum.jpg);
+}
+.banner-fonio{
+  background-image: url(../../img/banner/banner-fonio.jpg);
+}
+.banner-vernonia{
+  background-image: url(../../img/banner/banner-vernonia.jpg);
+}
+.banner-safflower{
+  background-image: url(../../img/banner/banner-safflower.jpg);
+}
+.banner-meadowfoam{
+  background-image: url(../../img/banner/banner-meadowfoam.jpg);
+}
+.banner-groundnut{
+  background-image: url(../../img/banner/banner-groundnut.jpg);
+}
+.banner-red-lentil{
+  background-image: url(../../img/banner/banner-red-lentil.jpg);
+}
+.banner-puffed-rice{
+  background-image: url(../../img/banner/banner-puffed-rice.jpg);
+}
+.banner-green-gram{
+  background-image: url(../../img/banner/banner-green-gram.jpg);
+}
+.banner-cowpea{
+  background-image: url(../../img/banner/banner-cowpea.jpg);
+}
+.banner-horse-gram{
+  background-image: url(../../img/banner/banner-horse-gram.jpg);
+}
+.banner-tulip{
+  background-image: url(../../img/banner/banner-tulip.jpg);
+}
+.banner-rose{
+  background-image: url(../../img/banner/banner-rose.jpg);
+}
+.banner-gerbera{
+  background-image: url(../../img/banner/banner-gerbera.jpg);
+}
+.banner-chrysanthemum{
+  background-image: url(../../img/banner/banner-chrysanthemum.jpg);
+}
+.banner-carnation{
+  background-image: url(../../img/banner/banner-carnation.jpg);
+}
+.banner-guava{
+  background-image: url(../../img/banner/banner-guava.jpg);
+}
+.banner-sapota{
+  background-image: url(../../img/banner/banner-sapota.jpg);
+}
+.banner-papaya{
+  background-image: url(../../img/banner/banner-papaya.jpg);
+}
+.banner-litchi{
+  background-image: url(../../img/banner/banner-litchi.jpg);
+}
+.banner-mustard-seeds{
+  background-image: url(../../img/banner/banner-mustard-seeds.jpg);
+}
+.banner-garlic{
+  background-image: url(../../img/banner/banner-garlic.jpg);
+}
+.banner-bay-leaf{
+  background-image: url(../../img/banner/banner-bay-leaf.jpg);
+}
+.banner-clove{
+  background-image: url(../../img/banner/banner-clove.jpg);
+}
+.banner-chilli-pepper{
+  background-image: url(../../img/banner/banner-chilli-pepper.jpg);
+}
+.banner-pumpkin{
+  background-image: url(../../img/banner/banner-pumpkin.jpg);
+}
+.banner-cucumber{
+  background-image: url(../../img/banner/banner-cucumber.jpg);
+}
+.banner-ridge-gourd{
+  background-image: url(../../img/banner/banner-ridge-gourd.jpg);
+}
+.banner-bitter-gourd{
+  background-image: url(../../img/banner/banner-bitter-gourd.jpg);
+}
+.banner-bell-pepper{
+  background-image: url(../../img/banner/banner-bell-pepper.jpg);
+}
+.banner-jackfruit{
+  background-image: url(../../img/banner/banner-jackfruit.jpg);
+}
+.banner-urad-dal-split{
+  background-image: url(../../img/banner/banner-urad-dal-split.jpg);
+}
+.banner-chana-dal{
+  background-image: url(../../img/banner/banner-chana-dal.jpg);
+}
+.banner-black-gram{
+  background-image: url(../../img/banner/banner-black-gram.jpg);
+}
+.banner-beaten-rice{
+  background-image: url(../../img/banner/banner-beaten-rice.jpg);
+}
+.banner-curry-leaves{
+  background-image: url(../../img/banner/banner-curry-leaves.jpg);
+}
+.banner-tulsi{
+  background-image: url(../../img/banner/banner-tulsi.jpg);
+}
+.banner-spearmint{
+  background-image: url(../../img/banner/banner-spearmint.jpg);
+}
+.banner-giloy{
+  background-image: url(../../img/banner/banner-giloy.jpg);
+}
+.banner-fenugreek{
+  background-image: url(../../img/banner/banner-fenugreek.jpg);
+}
+.banner-field-beans{
+  background-image: url(../../img/banner/banner-field-beans.jpg);
+}
+.banner-orchid{
+  background-image: url(../../img/banner/banner-orchid.jpg);
+}
+.banner-marigold{
+  background-image: url(../../img/banner/banner-marigold.jpg);
+}
+.banner-lilium{
+  background-image: url(../../img/banner/banner-lilium.jpg);
+}
+.banner-jasmine{
+  background-image: url(../../img/banner/banner-jasmine.jpg);
+}
+.banner-hydrangea{
+  background-image: url(../../img/banner/banner-hydrangea.jpg);
+}
+.banner-gladiolus{
+  background-image: url(../../img/banner/banner-gladiolus.jpg);
+}
+.banner-anthurium{
+  background-image: url(../../img/banner/banner-anthurium.jpg);
+}
+.banner-aster{
+  background-image: url(../../img/banner/banner-aster.jpg);
+}
+.banner-saffron{
+   background-image: url(../../img/banner/banner-saffron.jpg);
+}
+.banner-poppy-seed{
+   background-image: url(../../img/banner/banner-poppy-seed.jpg);
+}
+.banner-mace{
+   background-image: url(../../img/banner/banner-mace.jpg);
+}
+.banner-carom-seeds{
+   background-image: url(../../img/banner/banner-carom-seeds.jpg);
+}
+.banner-watermelon{
+  background-image: url(../../img/banner/banner-watermelon.jpg);
+}
+.banner-pears{
+  background-image: url(../../img/banner/banner-pears.jpg);
+}
+.banner-amla{
+  background-image: url(../../img/banner/banner-amla.jpg);
+}
+.banner-crossandra{
+  background-image: url(../../img/banner/banner-crossandra.jpg);
+}
+.banner-carom{
+  background-image: url(../../img/banner/banner-carom.jpg);
+}
+.banner-khus{
+  background-image: url(../../img/banner/banner-khus.jpg);
+}
+.banner-tuberose{
+  background-image: url(../../img/banner/banner-tuberose.jpg);
+}
+.banner-coriander-seeds{
+  background-image: url(../../img/banner/banner-coriander-seeds.jpg);
+}
+.banner-whole-masoor{
+  background-image: url(../../img/banner/banner-whole-masoor.jpg);
+}
+.banner-ber{
+  background-image: url(../../img/banner/banner-ber.jpg);
+}
+.banner-Urad-dal-gota{
+  background-image: url(../../img/banner/banner-urad-dal-gota.jpg);
+}
+.banner-moth-bean{
+  background-image: url(../../img/banner/banner-moth-bean.jpg);
+}
+.banner-carrots{
+  background-image: url(../../img/banner/banner-carrots.jpg);
+}
+.banner-beetroot{
+  background-image: url(../../img/banner/banner-beetroot.jpg);
+}
+.banner-taro{
+  background-image: url(../../img/banner/banner-taro.jpg);
+}
+.banner-sweet-potato{
+  background-image: url(../../img/banner/banner-sweet-potato.jpg);
+}
+.banner-radish{
+  background-image: url(../../img/banner/banner-radish.jpg);
+}
+.banner-lemon{
+  background-image: url(../../img/banner/banner-lemon.jpg);
+}
+.banner-jerusalem{
+  background-image: url(../../img/banner/banner-jerusalem.jpg);
+}
+.banner-coriander{
+  background-image: url(../../img/banner/banner-coriander.jpg);
+}
+.banner-peppercorns{
+  background-image: url(../../img/banner/banner-peppercorns.jpg);
+}
+.banner-green-chilli-pepper{
+  background-image: url(../../img/banner/banner-green-chilli-pepper.jpg);
+}
+.banner-green-cardamom{
+  background-image: url(../../img/banner/banner-green-cardamom.jpg);
+}
+.banner-spring-onion{
+  background-image: url(../../img/banner/banner-spring-onion.jpg);
+}
+.banner-mint{
+  background-image: url(../../img/banner/banner-mint.jpg);
+}
+.banner-hyacinth-beans{
+  background-image: url(../../img/banner/banner-hyacinth-beans.jpg);
+}
+.banner-raisins{
+  background-image: url(../../img/banner/banner-raisins.jpg);
+}
+.banner-cashew-nuts{
+  background-image: url(../../img/banner/banner-cashew-nuts.jpg);
+}
+.banner-apricots{
+  background-image: url(../../img/banner/banner-apricots.jpg);
+}
+.banner-walnut{
+  background-image: url(../../img/banner/banner-walnut.jpg);
+}
+.banner-almond-nuts{
+  background-image: url(../../img/banner/banner-almond-nuts.jpg);
+}
+.banner-dry-fig{
+  background-image: url(../../img/banner/banner-dry-fig.jpg);
+}
+.banner-pistachio{
+  background-image: url(../../img/banner/banner-pistachio.jpg);
+}
+.banner-hazelnut{
+  background-image: url(../../img/banner/banner-hazelnut.jpg);
+}
+.banner-dates{
+  background-image: url(../../img/banner/banner-dates.jpg);
+}
+.banner-betel-nuts{
+  background-image: url(../../img/banner/banner-betel-nuts.jpg);
+}
+// .wrapper {
+//   display: flex;
+//   justify-content: space-around;
+// }
+.product-fruit-wrapper {
+  height: 330px;
+  box-shadow: 0 0 25px rgba(0, 0, 0, 0.15);
+  border-radius: 13px;
+}
+.listing-form-area {
+  background-color: #c7f5ae;
+  padding: 20px;
+  border-radius: 5px;
+  position: sticky;
+  top: 80px;
+  right: 0px;
+  // z-index: 10;
+  width: 350px;
+  // margin-left: 50px;
+  // margin-top: 60px;
+  // box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+.listing-input-style input {
+  border: 1px solid #ececec;
+  color: #666666;
+  font-size: 14px;
+  height: 30px;
+  padding: 0 20px;
+  width: 100%;
+  line-height: 35px;
+}
+
+.listing-input-style label, .listing-textarea-style label {
+  color: #383838;
+  font-size: 14px;
+  font-weight: 400;
+  text-transform: capitalize;
+  }
+
+.sub-listing-area {
+  text-align: center;
+}
+
+.listing-form-input {
+  background-color: #fff !important;
+}
+
+.single-product {
+  margin: 20px 0;
+}
+.product-img img{
+  width: 220px;
+}
+
+.product-searchbar {
+  text-align: center;
+  margin: 4% 0 0 20%;
+}
+
+/*searchbar product*/
+
+
+    .searchbar{
+    margin-top: 5%;
+    height: 60px;
+    background-color: #c7f5ae;
+    border-radius: 30px;
+    padding: 10px;
+    }
+
+    .search_input{
+    color: white;
+    border: 0;
+    outline: 0;
+    background: none;
+    width: 0;
+    line-height: 40px;
+    transition: width 0.4s linear;
+    }
+    .search_input:focus {
+      border: 0;
+    }
+
+    .searchbar:hover > .search_input{
+    padding: 0 10px;
+    width: 450px;
+    transition: width 0.4s linear;
+    }
+
+    .searchbar:hover > .search_icon{
+    background: white;
+    color: #e74c3c;
+    }
+
+    .search_icon{
+    height: 40px;
+    width: 40px;
+    margin-right: 10px;
+    float: right;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+    color:white;
+    }
+
+
+    /*form */
+  .error {
+  color: #e74c3c !important;
+}
+
+
+/*homepage modal*/
+.modal-title h4 {
+  margin: 16px;
+}
+.modal-body {
+  padding: 15px 50px;
+}
+
+.modal-textarea textarea{
+  height: 100px;
+}
+
+/*product detail page*/
+
+.product-details-img-content,.product-details-content {
+  padding: 34px;
+}
+.para-details-content{
+padding-top: 34px;
+    padding-bottom: 34px;
+}
+.product-details-img-content img {
+  border-radius: 5px;
+}
+.product-details-content p{
+  font-size: 15px;
+}
+.product-details-content > h2 {
+  font-size: 36px;
+  font-weight: bold;
+  margin: 0 0 20px;
+  text-transform: uppercase;
+  color: #050035;
+}
+
+.goal-wrapper.mb-30 > h4 {
+  font-size: 20px;
+  font-weight: 500;
+  margin-bottom: 14px;
+  text-transform: uppercase;
+}
+
+.list-margin {
+  margin-left: 5%;
+}
+
+.anchor{
+  display: block;
+  height: 200px;
+  margin-top: -180px;
+  visibility: hidden;
+  scroll-behavior: smooth;
+}
+
+
+.lg-backdrop.in {
+    opacity: 0.60;
+}
+.fixed-size.lg-outer .lg-inner {
+  background-color: #FFF;
+}
+.fixed-size.lg-outer .lg-sub-html {
+  position: absolute;
+  text-align: left;
+}
+.fixed-size.lg-outer .lg-toolbar {
+  background-color: transparent;
+  height: 0;
+}
+.fixed-size.lg-outer .lg-toolbar .lg-icon {
+  color: #FFF;
+}
+.fixed-size.lg-outer .lg-img-wrap {
+  padding: 12px;
+}
+
+
+// product-detail openable form
+.form-widget {
+  background-color: #c7f5ae;
+  padding: 20px;
+  border-radius: 0 0 5px 5px;
+  position: fixed;
+  bottom: 0px;
+  right: 25px;
+  z-index: 100;
+  width: 350px;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  display: none;
+}
+
+.form-button {
+  display: inline-block;
+  position: fixed;
+  right: 26px;
+  z-index: 99;
+  bottom: 0px;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+.button-up {
+  bottom: 491px;
+  box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19);
+}
+.big-button {
+  height: 50px !important;
+  width: 349px !important;
+}
+.btn-comment {
+  height: 30px;
+  width: 200px;
+  font-weight: 500;
+  border: 0;
+  border-radius: 5px 5px 0 0 ;
+  cursor: pointer;
+}
+
+.btn-comment:hover {
+  height: 50px;
+  width: 349px;
+}
+
+#EMAIL-error {
+  position: absolute;
+  bottom: -30px;
+  left: 30px;
+}
+
+.food-menu-list {
+  position: sticky;
+  top: 72px;
+  z-index: 98;
+  background: white;
+}
+
+
+// owl
+.owl-prev,
+.owl-next {
+  position: absolute;
+  top: 40%;
+  transform: translateY(-50%);
+  transform: scale(1.3);
+}
+
+.owl-prev {
+  left: -50px;
+}
+
+.owl-next {
+  right: -50px;
+}
+
+.table-bordered td, .table-bordered th {
+    border:1px solid #c7f5ae;
+}
+
+#not-found {
+  display: none;
+  text-align: center;
+}
+
+.fruits-choose-content>p {
+  width: 100% !important;
+  color: #666;
+  letter-spacing: 0.4px;
+  line-height: 26px;
+  margin: 0;
+}
+.variety-logo {
+  left: 50px ;
+  // margin-top: 19px;
+}
+.variety-content {
+  margin-left: 80px;
+  margin-bottom: 0 !important;
+  padding: 0!important;
+}
+.product-basmati {
+  background-color: #e8f8df;
+}
+// supplier modal
+.farmer,.fpo-member,.manufacturer,.agent {
+  display: none;
+}
+
